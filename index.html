@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="custom.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gradient-to-br from-slate-100 sm:from-slate-400 sm:to-slate-100 to-slate-400">
+    <div class="contPage1 w-screen h-screen bg-gradient-to-br text-slate-900">
+        <div class="w-[90%] flex mx-auto items-center gap-3 flex-row-reverse pt-10 text-2xl">
+            <i class="fa-regular lamp1 fa-lightbulb"></i>
+            <div class="contForToggle w-14 h-8 px-1 relative flex items-center rounded-full bg-slate-500">
+                <div class="toggleBtn  size-6 transition-all duration-300 ease-linear cursor-pointer absolute left-1 rounded-full bg-slate-800"></div>
+            </div>
+            <i class="fa-solid lamp2 fa-lightbulb"></i>
+        </div>
+
+        <!-- page1 -->
+        <div class="flex gage1  text-slate-900 justify-between sm:flex-col w-[80%] sm:w-[95%] mx-auto sm:mt-20 mt-44">
+            <div class=" leftShit sm:text-center text-6xl sm:text-4xl font-font7">
+                <p class="leading-normal">Welcome to My<br><span class="font-medium text-7xl sm:text-5xl font-font6">simple Quiz !</span></p>
+                <p class="text-xl mt-20 sm:text-lg sm:mb-8 sm:mt-20">pick a subject to get started</p>
+            </div>
+            <div class="w-[40%] sm:w-full rightShit flex flex-col sm:gap-3 gap-4">
+                <div class="music relative bottom-0 left-0 flex cursor-pointer bg-slate-400 font-font7 items-center py-5 pl-3 rounded-lg font-semibold ">
+                    <i class="fa-solid icon1 absolute fa-music text-3xl sm:text-xl bg-slate-300 p-4 rounded-lg mr-5"></i>
+                    <p class="text-4xl pl-20 sm:text-2xl">Music</p>
+                </div>
+                <div class="flex relationships relative cursor-pointer bg-slate-400 font-font7 items-center py-5 pl-3 rounded-lg font-semibold ">
+                    <i class="fa-solid icon1 absolute fa-heart text-3xl sm:text-xl bg-slate-300 p-4 rounded-lg mr-5"></i>
+                    <p class="text-4xl pl-20 sm:text-2xl">Relationships</p>
+                </div>
+                <div class="flex personal relative cursor-pointer bg-slate-400 font-font7 items-center py-5 pl-3 rounded-lg font-semibold ">
+                    <i class="fa-solid icon1 absolute fa-user text-3xl sm:text-xl bg-slate-300 p-4 rounded-lg mr-5"></i>
+                    <p class="text-4xl pl-20 sm:text-2xl">Personal</p>
+                </div>
+                <div class="flex randomss relative cursor-pointer bg-slate-400 font-font7 items-center py-5 pl-3 rounded-lg font-semibold ">
+                    <i class="fa-solid icon1 absolute fa-dice-five text-3xl sm:text-xl bg-slate-300 p-4 rounded-lg mr-5"></i>
+                    <p class="text-4xl pl-20 sm:text-2xl">Random</p>
+                </div>
+            </div>
+        </div>
+        <!-- page1 end -->
+
+        <!-- pageMusic -->
+        <div class="gageMusic w-[80%] hidden sm:w-[90%]  mx-auto">
+            <div class="flex musicBar items-center mb-24 sm:mb-16">
+                <i class="fa-solid musicIcon fa-music text-3xl sm:text-xl bg-indigo-400 p-4 rounded-lg mr-4"></i>
+                <p class="text-4xl font-font6 font-medium sm:text-2xl">Music</p>
+            </div>
+            <div class="flex  forResult sm:flex-col items-center">
+            <div class="flex flex-col w-[50%] sm:w-full ">
+
+                <div class="font-font7 mb-32 sm:mb-5">
+                    <p class="text-gray-500 font-medium mb-7">Question <span class="qNumber">1</span> of 10</p>
+                    <div class="w-[80%] sm:w-full qMain text-4xl sm:text-2xl font-semibold font-font7 tracking-wide">
+                        <p class="q1">
+                            Who do I love most of these musicians ? 
+                        </p>
+                    </div>
+                </div>
+                <div class="w-[65%] sm:w-full flex justify-start p-[3px] items-center sm:mb-14 h-4 sm:h-3 rounded-full bg-slate-400">
+                    <div class="w-[10%] transition-all duration-500 bar h-[100%] rounded-full bg-indigo-700"></div>
+                </div>
+            </div>
+            <div class="answers w-[70%] sm:w-full flex flex-col self-end">
+                <div class="answers1 text-3xl sm:text-2xl font-font7 flex flex-col relative justify-end items-end gap-3">
+                    <button class="flex items-center gap-8 sm:gap-4 w-[70%] sm:w-full notselectedAnswer  p-3 sm:p-2 rounded-xl ">
+                        <p class=" size-14 sm:size-12 font-medium rounded-lg flex justify-center items-center bg-slate-300 sm:rounded-md">A</p>
+                        <p class=" ans1 font-semibold">Adele</p>
+                    </button>
+                    <button class="flex items-center gap-8 sm:gap-4 w-[70%] sm:w-full notselectedAnswer p-3 sm:p-2 rounded-xl ">
+                        <p class=" size-14 sm:size-12 font-medium rounded-lg flex justify-center items-center bg-slate-300 sm:rounded-md">B</p>
+                        <p class=" ans2 font-semibold">Lewis Capaldi</p>
+                    </button>
+                    <button class="flex items-center gap-8 sm:gap-4 w-[70%] sm:w-full notselectedAnswer p-3 sm:p-2 rounded-xl ">
+                        <p class=" size-14 sm:size-12 font-medium rounded-lg flex justify-center items-center bg-slate-300 sm:rounded-md">C</p>
+                        <p class=" ans3 font-semibold">Eminem</p>
+                    </button>
+                    <button class="flex items-center righttt gap-8 sm:gap-4 w-[70%] sm:w-full notselectedAnswer p-3 sm:p-2 rounded-xl ">
+                        <p class=" size-14 sm:size-12 font-medium rounded-lg flex justify-center items-center bg-slate-300 sm:rounded-md">D</p>
+                        <p class=" ans4 font-semibold">Isak Danielson</p>
+                    </button>
+                    
+                </div>
+
+                <div class="flex relative justify-end">
+                    <button class="bg-indigo-600 subAnswer step111 py-4 w-[70%] sm:w-full rounded-2xl text-3xl mt-4 font-medium font-font6">Submit Answer</button>
+                    <p class="absolute -bottom-14 tracking-wide hidden pAlert text-center text-red-700 text-lg font-medium ">Please choose your answer!</p>
+                </div>
+                
+            </div>
+            </div>
+            <div class="resultDiv hidden h-[calc(100vh-72px)] font-font6 flex flex-col justify-center items-center">
+                <div class="bg-slate-400 colorMe flex rounded-xl p-5 flex-col">
+                    <p class="text-5xl tracking-wide mb-4">Quiz completed</p>
+                    <p class="text-5xl tracking-wide mb-14 font-medium">You scored...</p>
+                    <div class="text-6xl text-center w-fit self-center font-bold p-12 mb-10 rounded-xl "><span class="score">0</span> / 10</div>
+                </div>
+            </div>
+        </div>
+        <!-- pageMusic end -->
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/* .toggleBtn{
+    animation-name: test;
+    animation-duration: 1s;
+}
+
+@keyframes test {
+    0%   {scale: 100%;}
+    50%  {scale: 50%;}
+    100% {scale: 100%;}
+  } */
+
+.notselectedAnswer {
+    background-color: #64748B;
+}
+
+.selectedAnswer {
+    /* background-color: #4F46E5; */
+}
+.correctAnswer {
+    background-color: green;
+}
+
+.activeQ {
+    display: block;
+}
